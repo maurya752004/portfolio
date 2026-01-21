@@ -1,6 +1,6 @@
-# Portfolio - Pankaj Maurya
+# Portfolio -  Maurya
 
-👋 Hi, I'm Pankaj Maurya
+👋 Hi, I'm  Maurya Pankaj
 
 Welcome to my personal portfolio repository. This site showcases my projects, skills, and resume.
 
