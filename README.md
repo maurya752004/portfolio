@@ -29,7 +29,7 @@ My resume is included in this repository: [Maurya_Pankaj02.pdf](Maurya_Pankaj02.
 
 1. Clone the repository:
 
-   git clone https://github.com/maurya752004/portfolio.git
+   git clone [https://github.com/maurya752004/portfolio.git](https://maurya752004.github.io/portfolio/)
 2. Change into the project directory:
 
    cd portfolio
