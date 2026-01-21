@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maurya Pankaj | AI/ML Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #1e3c72 100%);
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 204, 0.1) 0%, transparent 50%);
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.1); }
+  }
+
+  .hero-content {
+    z-index: 1;
+    animation: fadeInUp 1s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-content h1 {
+    font-size: 4em;
+    margin: 0;
+    background: linear-gradient(45deg, #00ffcc, #00cc99, #00ffcc);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease infinite, typewriter 2s steps(20) 0.5s forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #00ffcc;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  .hero-content h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    color: #00ffcc;
+    animation: fadeIn 1.5s ease-out 1s backwards;
+  }
+
+  .hero-content > p {
+    font-size: 1.3em;
+    margin: 1.5em 0;
+    color: #e0e0e0;
+    max-width: 700px;
+    line-height: 1.6;
+    animation: fadeIn 1.5s ease-out 1.5s backwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .buttons {
+    margin: 30px 0;
+    animation: fadeIn 1.5s ease-out 2s backwards;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 25px;
+    margin: 8px;
+    background: linear-gradient(135deg, #00ffcc 0%, #00cc99 100%);
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+  }
+
+  .button:hover {
+    background: linear-gradient(135deg, #00cc99 0%, #00ffcc 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 255, 204, 0.5);
+  }
+
+  .button i {
+    font-size: 1.2em;
+  }
+
+  #profile, #projects, #resume {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+
+  h2 {
+    font-size: 2.8em;
+    margin-bottom: 0.8em;
+    color: #00ffcc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #00ffcc, #00cc99);
+    border-radius: 2px;
+  }
+
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project {
+    margin: 30px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border-left: 5px solid #00ffcc;
+    transition: all 0.3s ease;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(10px);
+    box-shadow: 0 5px 25px rgba(0, 255, 204, 0.3);
+  }
+
+  .project h3 {
+    color: #00ffcc;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .project a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .project a:hover {
+    color: #00cc99;
+    text-decoration: underline;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #00ffcc 0%, #00cc99 100%);
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.3);
+  }
+
+  .btn:hover {
+    background: linear-gradient(135deg, #00cc99 0%, #00ffcc 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 255, 204, 0.5);
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 1.1em;
+    color: #00ffcc;
+  }
+
+  /* Profile Section Styling */
+  .profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 204, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .profile-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(0, 255, 204, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2);
+  }
+
+  .profile-card h3 {
+    color: #00ffcc;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .skill-item {
+    background: rgba(0, 255, 204, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 255, 204, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .skill-item:hover {
+    background: rgba(0, 255, 204, 0.2);
+    border-color: #00ffcc;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 255, 204, 0.3);
+  }
+
+  .skill-item h4 {
+    color: #00ffcc;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+  }
+
+  .certifications-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 2.5;
+  }
+
+  .certifications-list li {
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .certifications-list li:hover {
+    background: rgba(0, 255, 204, 0.1);
+    padding-left: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5em;
+    }
+    
+    .hero-content h2 {
+      font-size: 1.5em;
+    }
+    
+    .skill-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .button {
+      display: flex;
+      justify-content: center;
+      margin: 8px auto;
+      max-width: 250px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Maurya Pankaj</h1>
+      <h2>AI / ML Developer | B.Tech AIML</h2>
+      <p>Final-year AI & ML student passionate about building real-world intelligent systems.</p>
+      <div class="buttons">
+        <a href="mailto:mauryapankaj20365@gmail.com" class="button">
+          <i class="fas fa-envelope"></i> Personal Email
+        </a>
+        <a href="mailto:MAURYA.2022BTAIM065@student.nimsuniversity.org" class="button">
+          <i class="fas fa-envelope"></i> College Email
+        </a>
+        <a href="https://github.com/maurya752004" target="_blank" class="button">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/maurya-pankaj-6a3b0028a/" target="_blank" class="button">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.researchgate.net/profile/Maurya-Pankaj" target="_blank" class="button">
+          <i class="fas fa-graduation-cap"></i> ResearchGate
+        </a>
+        <a href="Maurya_Pankaj02.pdf" class="button" download>
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    
+    <div style="max-width: 1100px; margin: 0 auto; text-align: left;">
+      <div class="profile-card">
+        <h3>About Me</h3>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #e0e0e0;">
+          I am a final-year B.Tech student specializing in Artificial Intelligence and Machine Learning at NIMS University, Jaipur. 
+          I have hands-on experience in Machine Learning, Deep Learning, and Computer Vision, and I enjoy developing end-to-end AI solutions.
+          I am actively seeking an entry-level AI/ML or Data Science role.
+        </p>
+      </div>
+
+      <div class="profile-card">
+        <h3>Education</h3>
+        <div style="background-color: rgba(0, 255, 204, 0.15); padding: 25px; border-radius: 12px; border-left: 5px solid #00ffcc;">
+          <p style="font-size: 1.3em; margin: 8px 0; color: #fff;"><strong>🎓 B.Tech in Artificial Intelligence & Machine Learning</strong></p>
+          <p style="font-size: 1.1em; margin: 8px 0; color: #e0e0e0;">📍 NIMS University Rajasthan, Jaipur</p>
+          <p style="font-size: 1em; margin: 8px 0; color: #e0e0e0;">📅 Duration: 2022 – 2026</p>
+          <p style="font-size: 1em; margin: 8px 0; color: #00ffcc;"><strong>📊 CGPA: 7.38</strong></p>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <h3>Skills & Technologies</h3>
+        <div class="skill-grid" style="text-align: center;">
+          <div class="skill-item">
+            <h4>💻 Programming Languages</h4>
+            <p>Python, C</p>
+          </div>
+          <div class="skill-item">
+            <h4>🤖 AI / ML</h4>
+            <p>Machine Learning, Deep Learning, CNN, YOLOv8</p>
+          </div>
+          <div class="skill-item">
+            <h4>🔧 Frameworks</h4>
+            <p>PyTorch, TensorFlow/Keras, Scikit-learn</p>
+          </div>
+          <div class="skill-item">
+            <h4>👁️ Computer Vision</h4>
+            <p>OpenCV, TorchVision</p>
+          </div>
+          <div class="skill-item">
+            <h4>📊 Data Analysis</h4>
+            <p>NumPy, Pandas, Matplotlib, Seaborn</p>
+          </div>
+          <div class="skill-item">
+            <h4>☁️ Tools & Cloud</h4>
+            <p>Git/GitHub, Linux, Google Colab, AWS, Docker, MLflow</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <h3>Courses & Certifications</h3>
+        <div style="background-color: rgba(0, 255, 204, 0.05); padding: 25px; border-radius: 12px;">
+          <ul class="certifications-list">
+            <li>✅ Machine Learning Specialization</li>
+            <li>✅ Deep Learning with PyTorch</li>
+            <li>✅ Computer Vision Applications</li>
+            <li>✅ Data Science & Analytics</li>
+            <li>✅ Cloud Computing (AWS)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>AI-Based Forest Fire Detection</h3>
+      <p>Real-time fire detection system using YOLOv8 and OpenCV.</p>
+      <a href="https://github.com/maurya752004/AI--Based-Forest-Fire-Detaction" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Breast Cancer Detection</h3>
+      <p>ML-based system to classify tumors as benign or malignant.</p>
+      <a href="https://github.com/maurya752004/Breast-Cancer-Detection-" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Cat & Dog Image Classification</h3>
+      <p>CNN-based image classification using TensorFlow and Keras.</p>
+      <a href="https://github.com/maurya752004/cat-and-dog-classification" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Desktop AI Assistant</h3>
+      <p>Python-based desktop assistant using OpenAI APIs.</p>
+      <a href="https://github.com/maurya752004/open-AI" target="_blank">GitHub Repo</a>
+    </div>
+
+    <div class="project">
+      <h3>Anime Streaming Website</h3>
+      <p>HTML & CSS based front-end anime streaming website.</p>
+      <a href="https://github.com/maurya752004/anime" target="_blank">GitHub Repo</a>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <a class="btn" href="Maurya_Pankaj02.pdf" download>Download Resume (PDF)</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Maurya Pankaj | AI/ML Developer</p>
+  </footer>
+</body>
+</html>

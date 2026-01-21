@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Add your background image here */
+    background-size: cover;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #66ffcc; /* Lighter green color */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #33cc99;
+}
