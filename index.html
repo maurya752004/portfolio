@@ -143,7 +143,7 @@
     font-size: 1.2em;
   }
 
-  #profile, #projects, #resume {
+  #profile, #projects, #contact, #resume {
     padding: 80px 20px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
@@ -308,6 +308,67 @@
     padding-left: 20px;
   }
 
+  /* Contact Section */
+  #contact {
+    padding-bottom: 100px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+  }
+
+  .contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 204, 0.2);
+    border-radius: 14px;
+    padding: 22px;
+    text-align: left;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .contact-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(0, 255, 204, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2);
+  }
+
+  .contact-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #00ffcc 0%, #00cc99 100%);
+    color: #000;
+    font-size: 1.2em;
+    box-shadow: 0 6px 18px rgba(0, 255, 204, 0.35);
+  }
+
+  .contact-text h4 {
+    margin: 0 0 6px;
+    color: #00ffcc;
+    font-size: 1.2em;
+  }
+
+  .contact-text p, .contact-text a {
+    margin: 0;
+    color: #e0e0e0;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  .contact-cta {
+    margin-top: 30px;
+  }
+
   @media (max-width: 768px) {
     .hero-content h1 {
       font-size: 2.5em;
@@ -336,26 +397,6 @@
       <h1>Maurya Pankaj</h1>
       <h2>AI / ML Developer | B.Tech AIML</h2>
       <p>Final-year AI & ML student passionate about building real-world intelligent systems.</p>
-      <div class="buttons">
-        <a href="mailto:mauryapankaj20365@gmail.com" class="button">
-          <i class="fas fa-envelope"></i> Personal Email
-        </a>
-        <a href="mailto:MAURYA.2022BTAIM065@student.nimsuniversity.org" class="button">
-          <i class="fas fa-envelope"></i> College Email
-        </a>
-        <a href="https://github.com/maurya752004" target="_blank" class="button">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/maurya-pankaj-6a3b0028a/" target="_blank" class="button">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://www.researchgate.net/profile/Maurya-Pankaj" target="_blank" class="button">
-          <i class="fas fa-graduation-cap"></i> ResearchGate
-        </a>
-        <a href="Maurya_Pankaj02.pdf" class="button" download>
-          <i class="fas fa-download"></i> Download Resume
-        </a>
-      </div>
     </div>
   </header>
 
@@ -458,6 +499,64 @@
       <h3>Anime Streaming Website</h3>
       <p>HTML & CSS based front-end anime streaming website.</p>
       <a href="https://github.com/maurya752004/anime" target="_blank">GitHub Repo</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-text">
+          <h4>Personal Email</h4>
+          <a href="mailto:mauryapankaj20365@gmail.com">mauryapankaj20365@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+        <div class="contact-text">
+          <h4>College Email</h4>
+          <a href="mailto:MAURYA.2022BTAIM065@student.nimsuniversity.org">MAURYA.2022BTAIM065@student.nimsuniversity.org</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fab fa-github"></i></div>
+        <div class="contact-text">
+          <h4>GitHub</h4>
+          <a href="https://github.com/maurya752004" target="_blank">github.com/maurya752004</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+        <div class="contact-text">
+          <h4>LinkedIn</h4>
+          <a href="https://www.linkedin.com/in/maurya-pankaj-6a3b0028a/" target="_blank">linkedin.com/in/maurya-pankaj-6a3b0028a</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="contact-text">
+          <h4>ResearchGate</h4>
+          <a href="https://www.researchgate.net/profile/Maurya-Pankaj" target="_blank">ResearchGate Profile</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fas fa-file-download"></i></div>
+        <div class="contact-text">
+          <h4>Resume</h4>
+          <a href="Maurya_Pankaj02.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <a class="btn" href="mailto:mauryapankaj20365@gmail.com">Let’s Collaborate</a>
     </div>
   </section>
 
