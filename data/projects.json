@@ -1,0 +1,65 @@
+[
+  {
+    "title": "AI-Based Research Paper Review System",
+    "description": "Research paper analysis MVP that extracts PDF content, produces structured review signals, and supports RAG-based research assistance.",
+    "technologies": ["Python", "FastAPI", "Streamlit", "RAG", "SQLite"],
+    "github": "https://github.com/maurya752004/AI-Based-Research-Paper-Review-System",
+    "category": "AI/ML",
+    "featured": true,
+    "image": "assets/projects/project-placeholder.svg"
+  },
+  {
+    "title": "AI-Based Forest Fire Detection",
+    "description": "Built a real-time fire detection pipeline using YOLOv8 and OpenCV for image and video analysis.",
+    "technologies": ["Python", "YOLOv8", "OpenCV", "Computer Vision"],
+    "github": "https://github.com/maurya752004/AI--Based-Forest-Fire-Detaction",
+    "category": "AI/ML",
+    "featured": true,
+    "image": "assets/projects/project-placeholder.svg"
+  },
+  {
+    "title": "Smart Cyber Threat Analyzer",
+    "description": "Offline cyber threat intelligence system combining semantic search, FAISS retrieval, RAG prompts, and local language-model analysis.",
+    "technologies": ["Python", "FAISS", "Sentence Transformers", "RAG", "GPT-2"],
+    "github": "https://github.com/maurya752004/Smart-Cyber-Threat-Analyzer---RAG",
+    "category": "Cybersecurity",
+    "featured": true,
+    "image": "assets/projects/project-placeholder.svg"
+  },
+  {
+    "title": "Desktop AI Assistant",
+    "description": "Python desktop assistant project that connects user requests with OpenAI API capabilities.",
+    "technologies": ["Python", "OpenAI API"],
+    "github": "https://github.com/maurya752004/open-AI",
+    "category": "Python",
+    "featured": false,
+    "image": "assets/projects/project-placeholder.svg"
+  },
+  {
+    "title": "Breast Cancer Detection",
+    "description": "Machine learning classification project for predicting benign or malignant tumor labels.",
+    "technologies": ["Python", "Machine Learning", "Scikit-learn"],
+    "github": "https://github.com/maurya752004/Breast-Cancer-Detection-",
+    "category": "AI/ML",
+    "featured": false,
+    "image": "assets/projects/project-placeholder.svg"
+  },
+  {
+    "title": "Cat & Dog Image Classification",
+    "description": "CNN-based image classification project built with TensorFlow and Keras.",
+    "technologies": ["Python", "TensorFlow", "Keras"],
+    "github": "https://github.com/maurya752004/cat-and-dog-classification",
+    "category": "AI/ML",
+    "featured": false,
+    "image": "assets/projects/project-placeholder.svg"
+  },
+  {
+    "title": "Anime Streaming Website",
+    "description": "Front-end streaming-style website built with HTML and CSS as a web development practice project.",
+    "technologies": ["HTML", "CSS"],
+    "github": "https://github.com/maurya752004/anime",
+    "category": "Other",
+    "featured": false,
+    "image": "assets/projects/project-placeholder.svg"
+  }
+]

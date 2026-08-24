@@ -1,0 +1,34 @@
+[
+  {
+    "title": "HackerRank Certificate",
+    "issuer": "HackerRank",
+    "type": "Certificate",
+    "file": "Certificate/HackerRank_Certificate.png",
+    "preview": "Certificate/HackerRank_Certificate.png"
+  },
+  {
+    "title": "Hired Certificate",
+    "issuer": "Certificate",
+    "type": "Certificate",
+    "file": "Certificate/Maurya_Pankaj_Hired_Certificate.pdf.pdf"
+  },
+  {
+    "title": "Certificate of Completion",
+    "issuer": "Certificate",
+    "type": "Certificate",
+    "file": "Certificate/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_cSBgeQnXRCBSfBWFQ_1753280642995_completion_certificate.pdf"
+  },
+  {
+    "title": "Certificate PDF",
+    "issuer": "Certificate",
+    "type": "Certificate",
+    "file": "Certificate/certificate.pdf"
+  },
+  {
+    "title": "Complete Certificate",
+    "issuer": "Certificate",
+    "type": "Certificate",
+    "file": "Certificate/Complete Certificate.png",
+    "preview": "Certificate/Complete Certificate.png"
+  }
+]

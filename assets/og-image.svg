@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Maurya Pankaj portfolio preview</title>
+  <desc id="desc">Open Graph preview image for the portfolio website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dff7ff"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="72" y="72" width="1056" height="486" rx="36" fill="#061326"/>
+  <text x="120" y="210" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" fill="#ffffff">Maurya Pankaj</text>
+  <text x="120" y="286" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#cbd5e1">Artificial Intelligence &amp; Machine Learning Professional</text>
+  <text x="120" y="360" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#94a3b8">Building practical solutions with Python, Machine Learning, Linux and Cybersecurity.</text>
+  <circle cx="952" cy="314" r="116" fill="#22d3ee"/>
+  <text x="952" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700" fill="#061326">MP</text>
+</svg>
